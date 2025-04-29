@@ -84,7 +84,6 @@ class Bird:
             self.img = __class__.imgs[tuple(sum_mv)]
         screen.blit(self.img, self.rct)
 
-
 class Beam:
     """
     こうかとんが放つビームに関するクラス
@@ -151,7 +150,6 @@ class Bomb:
 #         引数screen:フォントfont
 #         """
 #         self = pg.font.SysFont("hgp創英角ﾎﾟｯﾌﾟ体", 30)
-        
 #         self.img = self.fonto.render("Score : " + str(score), 0, (0, 0, 255))
 #         # screen.blit(self.img, [100, 600])
 
