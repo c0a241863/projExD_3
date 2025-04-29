@@ -84,6 +84,7 @@ class Bird:
             self.img = __class__.imgs[tuple(sum_mv)]
         screen.blit(self.img, self.rct)
 
+
 class Beam:
     """
     こうかとんが放つビームに関するクラス
@@ -98,6 +99,7 @@ class Beam:
         self.rct.centery = bird.rct.centery  # こうかとんの中心縦座標
         self.rct.left = bird.rct.right  # ビームの左座標 = こうかとんの右座標
         self.vx, self.vy = +5, 0
+
 
     def update(self, screen: pg.Surface):
         """
@@ -125,6 +127,7 @@ class Bomb:
         self.rct = self.img.get_rect()
         self.rct.center = random.randint(0, WIDTH), random.randint(0, HEIGHT)
         self.vx, self.vy = +5, +5
+
 
     def update(self, screen: pg.Surface):
         """
@@ -158,8 +161,7 @@ class Bomb:
 #         """
 #         文字列Surfaceの生成
 #         引数 screen：文字列Surface
-#         """
-        
+#         """      
 #         screen.blit(self.img, [100, 600])
 
 
